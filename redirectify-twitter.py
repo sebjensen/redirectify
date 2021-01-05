@@ -7,11 +7,10 @@ def makeRedirect(name, site, title, url, description, img):
       window.location.href = "{url}"
     </script>
     <title>{title}</title>
-    <meta property="og:site_name" content="{site}">
-    <meta property="og:title" content="{title}">
-    <meta property="og:url" content="{url}">
-    <meta property="og:description" content="{description}">
-    <meta property="og:image" content="{img}">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="{site}" />
+    <meta name="twitter:title" content="{site}" />
+    <meta name="twitter:description" content="{description}" content="{img}" />
   </head>
   <body>
     If you are not redirected automatically, follow this <a href='{url}'>link</a>.
